@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+	<html>
+    <head>
+        <title>Berkah Travel</title>
+    </head>
+    <body>
+
+        <div align="center">
+            <fieldset>
+                    <img id="alvvays" src="images/berkah.jpg" alt="logo">
+                    <h3 style="color: red; font-family: 'Courier New', Courier, monospace">Welcome to Berkah Travel <br>
+                        Please Login</h3>
+                        <body style="color :rgb(4, 6, 6)"></body>
+                        <style>
+                        body{
+                            background-color: rgb(170, 175, 170);
+                        }
+                        </style>
+
+                        <fieldset style="background: #faf6f6; margin-bottom: 30pt">
+                            <legend align="center">Login</legend>
+                             <table>
+                                 <tr>
+                                     <td>Username</td>
+                                     <td><input type="text" required id="userInput"> </td>
+                                 </tr>
+                                 <tr>
+                                        <td>Password</td>
+                                        <td><input type="password" required id="passInput"> </td>
+                                    </tr>
+                                    <tr>
+                                      <td>
+                                        <td colspan="5">
+                                            <button id="buttonLogin" type="button" style="background: green; color: white; width: 100pt; padding: 5pt">Login</button>
+                                        </td>
+                                    </td>
+                                    </tr>
+
+                             </table>
+														 	<hl> belum punya akun?</hl> <a href="daftar.html">daftar</a>
+                        </fieldset>
+
+            </fieldset>
+
+            <script>
+                var chance = 3;
+                document.getElementById("buttonLogin").onclick = function(){
+                    if(document.getElementById("userInput").value=="hendrike"&&document.getElementById("passInput").value=="97820"){
+                        alert("Login Succeess");
+                        window.location = "index.html";
+                    }else{
+
+                        chance = chance-1;
+                        if(chance!=0){
+                            alert("Kesempatan login : "+chance);
+                        }else{
+                            document.getElementById("userInput").disabled = true;
+                            document.getElementById("passInput").disabled = true;
+                            document.getElementById("buttonLogin").disabled = true;
+                        }
+
+                    }
+
+                }
+
+            </script>
+    </body>
+</html>
