@@ -74,8 +74,8 @@ $daftarRempah = $conn->query("SELECT * FROM tb_daftarrempah");
                 echo "<td>" . $produk['asalKota'] . "</td>";
                 echo "<td>" . $produk['harga'] . "</td>";
                 echo "<td>" . $produk['stok'] . "</td>"; ?>
-                <td><a href="edit-product.php?id=<?php echo $produk['idcat'] ?>" ?>Edit</a></td>
-                <td><a href="delete-product.php?id=<?php echo $produk['idcat'] ?>" ?>Delete</a></td></tr>
+                <td><a href="edit-product.php?id=<?php echo $produk['id'] ?>" ?>Edit</a></td>
+                <td><a href="delete-product.php?id=<?php echo $produk['id'] ?>" ?>Delete</a></td></tr>
             <?php } ?>
 
             <tr>
